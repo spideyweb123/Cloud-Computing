@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusAutomation</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="container">
+        <div>
+            <nav>
+                <img src="../img/logo.png" alt="logo" class="logo">
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-text">
+            <div class="main-text-info">
+                <h1>College Automation</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio odio, finibus accumsan iaculis iaculis, hendrerit at tortor. Phasellus pretium eros non sagittis vestibulum. Vestibulum accumsan purus at aliquet pretium. Curabitur vulputate velit nec lorem facilisis efficitur.</h2>     
+            </div>
+            <button class="btn  btn-full" onclick="openLoginForm()"> Log-in</button>
+
+            <!--login form-->
+            <div class="container-login" id="myForm-login" >
+                <div class="text">Login</div>
+                    <form action="form.html" class="form">
+                        <div class="data">
+                            <input type="text" placeholder="Email Address"  required>
+                        </div>
+                        <div class="data">
+                            <input type="password" placeholder="Password"  required>
+                        </div>
+                            <div class="btn2">
+                                <button type="form-button"  >Login </button>
+                                <button type="button" class="btn2 cancel" onclick="closeLoginForm()">Close</button>
+                            </div>
+                    </form>
+            </div>
+            <!--script for login form-->
+            <script>
+              function openLoginForm() {
+                document.getElementById("myForm-login").style.display = "block";
+              }
+              
+              function closeLoginForm() {
+                document.getElementById("myForm-login").style.display = "none";
+              }
+            </script>
+
+            <button class="btn btn-full" onclick="openSignupForm()">Sign-up</button>
+            <!--Signup form-->
+            <div class="container-signup" id="myForm-signup" >
+                <div class="text">Sign Up</div>
+                    <form action="#" class="form">
+                        <div class="data">
+                            <input type="text" placeholder="Username"  required>
+                        </div>
+                        <div class="data">
+                            <input type="text" placeholder="Email Address"  required>
+                        </div>
+                        <div class="data">
+                            <input type="password" placeholder="Password"  required>
+                        </div>
+                        <div class="data">
+                            <input type="password" placeholder=" Confirm Password"  required>
+                        </div>
+                            <div class="btn2">
+                                <button type="form-button" >Sign Up</button>
+                                <button type="button" class="btn2 cancel" onclick="closeSignupForm()">Close</button>
+                            </div>
+                    </form>
+            </div>
+            <!--script for signup form-->
+            <script>
+                function openSignupForm() {
+                  document.getElementById("myForm-signup").style.display = "block";
+                }
+                
+                function closeSignupForm() {
+                  document.getElementById("myForm-signup").style.display = "none";
+                }
+              </script>
+        </div>
+    </header>
+    <section class="about-section ">
+        <div class="row">
+            <div class="col span_1_of_2 about-box">
+                <h2 class="about-heading">About Us</h2>
+                <p class="about-para">Lorem ipsut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio odio, finibus accumsan iaculis iaculis, hendrerit at tortor. Phasellus pretium Utnar dapibus leo. </p>
+                <p class="about-para">Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio odio, finibus accumsan iaculis iaculis, hendrerit at tortor. Phasellus pretiumdvinar dapibus leo. </p>
+                <a href="#" class="about-btn btn-ghost">Read More</a>
+            </div>
+            <div class="col span_1_of_2 about-box">
+                <img src="../img/background-image.jpg" alt="about img" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section js--contact" id="contact">
+        <div class="row">
+            <h2 class="contact-heading">We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span_1_of_3 contact-label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3 contact-label">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col span_1_of_3 contact-label">
+                        <label for="message">Drop us a line</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        &nbsp;
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+    
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help & Support</a></li>    
+                </ul>
+            </div>     
+            
+        </div>
+        <div class="row">
+            <p>Copyright 2021 </p>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>

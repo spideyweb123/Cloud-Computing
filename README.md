@@ -2,7 +2,7 @@
 
 **Title:- College Campus online Automation using Cloud Computing**
 
-website :-[ http://campusauto.tk/](url)
+website :-[ http://campusauto.tk/]
 
 
 

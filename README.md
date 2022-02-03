@@ -6,7 +6,7 @@ website :-[ http://campusauto.tk/]
 
 
 
-#** Install Apache Tomcat Server on VPS Ubuntu 20.04**
+** Install Apache Tomcat Server on VPS Ubuntu 20.04**
 Instructions on configuring Ubuntu 20.04 VPS server to run java web.
 
 ![image](https://github.com/spideyweb123/Cloud-Computing/blob/main/tomcat.png)
